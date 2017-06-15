@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>初学python的疑问 | Tianjie&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#python初学函数的默认参数 以下函数例子：  def foo(numbers=[]): numbers.append(9) print numbers  在这里，我们定义了一个 list （默认为空），给它加入9并且打印出来。   foo()    [9]foo(numbers=[1,2])    [1, 2, 9]foo(numbers=[1,2,3])    [1, 2, 3, 9]">
+  <meta name="description" content="#python初学函数的默认参数 以下函数例子：  def foo(numbers=[]): numbers.append(9) print numbers *在这里，我们定义了一个 list （默认为空），给它加入9并且打印出&amp;gt;来。 &amp;gt;&amp;gt;&amp;gt; foo() [9] &amp;gt;&amp;gt;&amp;gt; foo(numbers=[1,2]) [1, 2, 9] &amp;gt;&amp;gt;&amp;gt; f">
 <meta name="keywords" content="玩蛇">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初学python的疑问">
-<meta property="og:url" content="http://yoursite.com/2017/06/14/python函数的默认参数/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/06/15/python函数的默认参数/index.html">
 <meta property="og:site_name" content="Tianjie&#39;s Blog">
-<meta property="og:description" content="#python初学函数的默认参数 以下函数例子：  def foo(numbers=[]): numbers.append(9) print numbers  在这里，我们定义了一个 list （默认为空），给它加入9并且打印出来。   foo()    [9]foo(numbers=[1,2])    [1, 2, 9]foo(numbers=[1,2,3])    [1, 2, 3, 9]">
+<meta property="og:description" content="#python初学函数的默认参数 以下函数例子：  def foo(numbers=[]): numbers.append(9) print numbers *在这里，我们定义了一个 list （默认为空），给它加入9并且打印出&amp;gt;来。 &amp;gt;&amp;gt;&amp;gt; foo() [9] &amp;gt;&amp;gt;&amp;gt; foo(numbers=[1,2]) [1, 2, 9] &amp;gt;&amp;gt;&amp;gt; f">
 <meta property="og:image" content="http://a1.qpic.cn/psb?/V13TmHHh4duyKC/T3Yac1tgvCDwmfHcjn4AIAIfL8jlYun1MI6lNpU5e48!/b/dCABAAAAAAAA&bo=SQMGAkkDBgIRBzA!&rf=viewer_4">
-<meta property="og:updated_time" content="2017-06-15T12:48:11.206Z">
+<meta property="og:updated_time" content="2017-06-15T13:07:14.041Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初学python的疑问">
-<meta name="twitter:description" content="#python初学函数的默认参数 以下函数例子：  def foo(numbers=[]): numbers.append(9) print numbers  在这里，我们定义了一个 list （默认为空），给它加入9并且打印出来。   foo()    [9]foo(numbers=[1,2])    [1, 2, 9]foo(numbers=[1,2,3])    [1, 2, 3, 9]">
+<meta name="twitter:description" content="#python初学函数的默认参数 以下函数例子：  def foo(numbers=[]): numbers.append(9) print numbers *在这里，我们定义了一个 list （默认为空），给它加入9并且打印出&amp;gt;来。 &amp;gt;&amp;gt;&amp;gt; foo() [9] &amp;gt;&amp;gt;&amp;gt; foo(numbers=[1,2]) [1, 2, 9] &amp;gt;&amp;gt;&amp;gt; f">
 <meta name="twitter:image" content="http://a1.qpic.cn/psb?/V13TmHHh4duyKC/T3Yac1tgvCDwmfHcjn4AIAIfL8jlYun1MI6lNpU5e48!/b/dCABAAAAAAAA&bo=SQMGAkkDBgIRBzA!&rf=viewer_4">
   
     <link rel="alternative" href="/atom.xml" title="Tianjie&#39;s Blog" type="application/atom+xml">
@@ -181,8 +181,8 @@
   
 
         
-        <a href="/2017/06/14/python函数的默认参数/" class="archive-article-date">
-  	<time datetime="2017-06-14T03:14:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
+        <a href="/2017/06/15/python函数的默认参数/" class="archive-article-date">
+  	<time datetime="2017-06-15T03:14:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
 </a>
         
       </header>
@@ -195,23 +195,31 @@
 <pre><code>def foo(numbers=[]):
 numbers.append(9)
 print numbers
-</code></pre><blockquote>
-<p>在这里，我们定义了一个 list （默认为空），给它加入9并且打印出来。</p>
-<blockquote>
-<blockquote>
-<p>foo()<br>    [9]<br>foo(numbers=[1,2])<br>    [1, 2, 9]<br>foo(numbers=[1,2,3])<br>    [1, 2, 3, 9]<br>    看起来还行吧？可是当我们不输入number 参数来调用 foo 函数时，神奇的事情发生了：<br>foo() # first time, like before<br>    [9]<br>foo() # second time<br>    [9, 9]<br>foo() # third time…<br>    [9, 9, 9]<br>foo() # WHAT IS THIS BLACK MAGIC?!<br>    [9, 9, 9, 9]</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<p><strong>python的参数有可变的：比如列表，字典这些；还有不可变的int,tuple 的数据类型，他们做默认参数的时候要区分</strong></p>
+</code></pre><p>*在这里，我们定义了一个 list （默认为空），给它加入9并且打印出&gt;来。</p>
+<pre><code>&gt;&gt;&gt; foo()
+[9]
+&gt;&gt;&gt; foo(numbers=[1,2])
+[1, 2, 9]
+&gt;&gt;&gt; foo(numbers=[1,2,3])
+[1, 2, 3, 9]
+#看起来还行吧？可是当我们不输入number 参数来调用 foo 函数#时，神奇的事情发生了：
+&gt;&gt;&gt; foo() # first time, like before
+[9]
+&gt;&gt;&gt; foo() # second time
+[9, 9]
+&gt;&gt;&gt; foo() # third time...
+[9, 9, 9]
+&gt;&gt;&gt; foo() # WHAT IS THIS BLACK MAGIC?!
+[9, 9, 9, 9]
+</code></pre><p><strong>python的参数有可变的：比如列表，字典这些；还有不可变的int,tuple 的数据类型，他们做默认参数的时候要区分</strong></p>
 <hr>
 <blockquote>
 <p>因为在你每次给函数指定一个默认值的时候，Python都会存储这个值。如果在调用函数的时候重写了默认值，那么这个存储的值就不会被使用。当你不重写默认值的时候，那么Python就会让默认值引用存储的值（这个例子里的numbers）。它并不是将存储的值拷贝来为这个变量赋值。这个概念可能对初学者来说，理解起来会比较吃力，所以可以这样来理解：有两个变量，一个是内部的，一个是当前运行时的变量。现实就是我们有两个变量来用相同的值进行交互，所以一旦 numbers 的值发生变化也会改变Python里面保存的初始值的记录。</p>
+</blockquote>
 <p>##（这里的list发生了变化，而且没有传入赋值，直接用了存在的已经定义的numbers变量）##</p>
 <ul>
 <li>遇到了，不要忘了类似这样解决：</li>
 </ul>
-</blockquote>
 <pre><code>def foo(numbers=None):
     if numbers is None: #比较判断只能用none，
                         isnum。。。都是错的
@@ -222,17 +230,19 @@ print numbers
 <ul>
 <li><p>还有以下的类似问题：</p>
 <pre><code>def print_now(now=time.time()):
-    print now
-</code></pre><p>运行</p>
+print now
+</code></pre></li>
+</ul>
+<p>运行</p>
 <pre><code>&gt;&gt;&gt; print_now()
 1373121487.91
 &gt;&gt;&gt; print_now()
 1373121487.91
 &gt;&gt;&gt; print_now()
 1373121487.91
-</code></pre></li>
-</ul>
-<h2 id="解决是print-表达式应该是函数调用的方式（print-numbers-）；"><a href="#解决是print-表达式应该是函数调用的方式（print-numbers-）；" class="headerlink" title="##解决是print 表达式应该是函数调用的方式（print(numbers)）；"></a>##解决是print 表达式应该是函数调用的方式（print(numbers)）；</h2><p><img src="http://a1.qpic.cn/psb?/V13TmHHh4duyKC/T3Yac1tgvCDwmfHcjn4AIAIfL8jlYun1MI6lNpU5e48!/b/dCABAAAAAAAA&amp;bo=SQMGAkkDBgIRBzA!&amp;rf=viewer_4" alt="asd"></p>
+</code></pre><p>###解决是print 表达式应该是函数调用的方式（print(numbers)）</p>
+<hr>
+<p><img src="http://a1.qpic.cn/psb?/V13TmHHh4duyKC/T3Yac1tgvCDwmfHcjn4AIAIfL8jlYun1MI6lNpU5e48!/b/dCABAAAAAAAA&amp;bo=SQMGAkkDBgIRBzA!&amp;rf=viewer_4" alt="asd"></p>
 <p><a href="http://www.quzhuanpan.com" target="_blank" rel="external">转盘网，百度网盘下的各种资源的搜索引擎</a></p>
 
       
@@ -324,7 +334,7 @@ print numbers
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/14/python函数的默认参数/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/06/15/python函数的默认参数/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -338,15 +348,11 @@ print numbers
   
 <nav id="article-nav">
   
-    <a href="/2017/06/14/artical/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          artical
-        
-      </div>
-    </a>
   
+    <a href="/2017/06/14/artical/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">artical</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
