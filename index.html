@@ -316,6 +316,109 @@ public class Blog
 
 
   
+    <article id="post-python函数的默认参数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/14/python函数的默认参数/">初学python的疑问</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/14/python函数的默认参数/" class="archive-article-date">
+  	<time datetime="2017-06-14T03:14:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="python初学函数的默认参数"><a href="#python初学函数的默认参数" class="headerlink" title="#python初学函数的默认参数"></a>#python初学函数的默认参数</h2><blockquote>
+<p>以下函数例子：</p>
+</blockquote>
+<pre><code>def foo(numbers=[]):
+numbers.append(9)
+print numbers
+</code></pre><blockquote>
+<p>在这里，我们定义了一个 list （默认为空），给它加入9并且打印出来。</p>
+<blockquote>
+<blockquote>
+<p>foo()<br>    [9]<br>foo(numbers=[1,2])<br>    [1, 2, 9]<br>foo(numbers=[1,2,3])<br>    [1, 2, 3, 9]<br>    看起来还行吧？可是当我们不输入number 参数来调用 foo 函数时，神奇的事情发生了：<br>foo() # first time, like before<br>    [9]<br>foo() # second time<br>    [9, 9]<br>foo() # third time…<br>    [9, 9, 9]<br>foo() # WHAT IS THIS BLACK MAGIC?!<br>    [9, 9, 9, 9]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><strong>python的参数有可变的：比如列表，字典这些；还有不可变的int,tuple 的数据类型，他们做默认参数的时候要区分</strong></p>
+<hr>
+<blockquote>
+<p>因为在你每次给函数指定一个默认值的时候，Python都会存储这个值。如果在调用函数的时候重写了默认值，那么这个存储的值就不会被使用。当你不重写默认值的时候，那么Python就会让默认值引用存储的值（这个例子里的numbers）。它并不是将存储的值拷贝来为这个变量赋值。这个概念可能对初学者来说，理解起来会比较吃力，所以可以这样来理解：有两个变量，一个是内部的，一个是当前运行时的变量。现实就是我们有两个变量来用相同的值进行交互，所以一旦 numbers 的值发生变化也会改变Python里面保存的初始值的记录。</p>
+<p>##（这里的list发生了变化，而且没有传入赋值，直接用了存在的已经定义的numbers变量）##</p>
+<ul>
+<li>遇到了，不要忘了类似这样解决：</li>
+</ul>
+</blockquote>
+<pre><code>def foo(numbers=None):
+    if numbers is None: #比较判断只能用none，
+                        isnum。。。都是错的
+    numbers = []
+    numbers.append(9)
+    print numbers
+</code></pre><hr>
+<ul>
+<li><p>还有以下的类似问题：</p>
+<pre><code>def print_now(now=time.time()):
+    print now
+</code></pre><p>运行</p>
+<pre><code>&gt;&gt;&gt; print_now()
+1373121487.91
+&gt;&gt;&gt; print_now()
+1373121487.91
+&gt;&gt;&gt; print_now()
+1373121487.91
+</code></pre></li>
+</ul>
+<h2 id="解决是print-表达式应该是函数调用的方式（print-numbers-）；"><a href="#解决是print-表达式应该是函数调用的方式（print-numbers-）；" class="headerlink" title="##解决是print 表达式应该是函数调用的方式（print(numbers)）；"></a>##解决是print 表达式应该是函数调用的方式（print(numbers)）；</h2><p><img src="http://a1.qpic.cn/psb?/V13TmHHh4duyKC/T3Yac1tgvCDwmfHcjn4AIAIfL8jlYun1MI6lNpU5e48!/b/dCABAAAAAAAA&amp;bo=SQMGAkkDBgIRBzA!&amp;rf=viewer_4" alt="asd"></p>
+<p><a href="http://www.quzhuanpan.com" target="_blank" rel="external">转盘网，百度网盘下的各种资源的搜索引擎</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">玩蛇</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/14/python函数的默认参数/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
   
 
 
@@ -409,6 +512,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Canot see Drafts</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">玩蛇</a>
               </li>
             
             <div class="clearfix"></div>
