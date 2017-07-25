@@ -167,83 +167,237 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-python函数的默认参数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Chan-can-night-howling" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/15/python函数的默认参数/">初学python的疑问</a>
+      <a class="article-title" href="/2017/07/25/Chan-can-night-howling/">Chan can night howling</a>
     </h1>
   
 
         
-        <a href="/2017/06/15/python函数的默认参数/" class="archive-article-date">
-  	<time datetime="2017-06-15T03:14:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-15</time>
+        <a href="/2017/07/25/Chan-can-night-howling/" class="archive-article-date">
+  	<time datetime="2017-07-25T15:52:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="python初学函数的默认参数"><a href="#python初学函数的默认参数" class="headerlink" title="#python初学函数的默认参数"></a>#python初学函数的默认参数</h2><blockquote>
-<p>以下函数例子：</p>
-</blockquote>
-<pre><code>def foo(numbers=[]):
-numbers.append(9)
-print numbers
-</code></pre><p>*在这里，我们定义了一个 list （默认为空），给它加入9并且打印出&gt;来。</p>
-<pre><code>&gt;&gt;&gt; foo()
-[9]
-&gt;&gt;&gt; foo(numbers=[1,2])
-[1, 2, 9]
-&gt;&gt;&gt; foo(numbers=[1,2,3])
-[1, 2, 3, 9]
-#看起来还行吧？可是当我们不输入number 参数来调用 foo 函数#时，神奇的事情发生了：
-&gt;&gt;&gt; foo() # first time, like before
-[9]
-&gt;&gt;&gt; foo() # second time
-[9, 9]
-&gt;&gt;&gt; foo() # third time...
-[9, 9, 9]
-&gt;&gt;&gt; foo() # WHAT IS THIS BLACK MAGIC?!
-[9, 9, 9, 9]
-</code></pre><p><strong>python的参数有可变的：比如列表，字典这些；还有不可变的int,tuple 的数据类型，他们做默认参数的时候要区分</strong></p>
-<hr>
-<blockquote>
-<p>因为在你每次给函数指定一个默认值的时候，Python都会存储这个值。如果在调用函数的时候重写了默认值，那么这个存储的值就不会被使用。当你不重写默认值的时候，那么Python就会让默认值引用存储的值（这个例子里的numbers）。它并不是将存储的值拷贝来为这个变量赋值。这个概念可能对初学者来说，理解起来会比较吃力，所以可以这样来理解：有两个变量，一个是内部的，一个是当前运行时的变量。现实就是我们有两个变量来用相同的值进行交互，所以一旦 numbers 的值发生变化也会改变Python里面保存的初始值的记录。</p>
-</blockquote>
-<p>##（这里的list发生了变化，而且没有传入赋值，直接用了存在的已经定义的numbers变量）##</p>
-<ul>
-<li>遇到了，不要忘了类似这样解决：</li>
-</ul>
-<pre><code>def foo(numbers=None):
-    if numbers is None: #比较判断只能用none，
-                        isnum。。。都是错的
-    numbers = []
-    numbers.append(9)
-    print numbers
-</code></pre><hr>
-<ul>
-<li><p>还有以下的类似问题：</p>
-<pre><code>def print_now(now=time.time()):
-print now
-</code></pre></li>
-</ul>
-<p>运行</p>
-<pre><code>&gt;&gt;&gt; print_now()
-1373121487.91
-&gt;&gt;&gt; print_now()
-1373121487.91
-&gt;&gt;&gt; print_now()
-1373121487.91
-</code></pre><p>###解决是print 表达式应该是函数调用的方式（print(numbers)）</p>
-<hr>
-<p><img src="http://a1.qpic.cn/psb?/V13TmHHh4duyKC/T3Yac1tgvCDwmfHcjn4AIAIfL8jlYun1MI6lNpU5e48!/b/dCABAAAAAAAA&amp;bo=SQMGAkkDBgIRBzA!&amp;rf=viewer_4" alt="asd"></p>
-<p><a href="http://www.quzhuanpan.com" target="_blank" rel="external">转盘网，百度网盘下的各种资源的搜索引擎</a></p>
+        <p>#夜之蝉鸣</p>
+<p>这可能是一直特立独行的知了吧，白天睡大觉，晚上才起床闹。</p>
+<p>这只小东西可能是真的聪明吧，白天叫太大声有黄雀找着它，晚上叫没有人不觉得他嗓门大。确实让人烦躁，又热，更是睡不着觉。当然，我这个Night Owl不针对夏天，四季都也不一定睡得着。只是声讨这只知了，为大家打抱不平而已，哈哈~。</p>
+<p>但是学校人都走光啦。七月份头上，少数专业还在考试吧，正式放假还有两三日，校外的商贩也开始稀疏了。一个人拖鞋走在学校的行人道上，擦身许多的行道树，不知道上面是不是躲着不敢吭声的蝉儿们，但是我知道只有自己一个人了啦，这学校真大，路也那么宽而修长，一个人确实没有兴致都去走完。</p>
+<p>这个节气蝉也死光光了吗？白天都被吃掉了？仅有晚上的蝉在发声抗议吗? 那上面都不成立的话，原来我自身都是很宅的那种吗? 讲实话，原先童年在乡村是经常和树蝉一起玩，没有蝉的躯壳可以玩的话，抽屉里又会少多少Coins，那时候大人没有钱分给小孩，都是我很自觉的取出到小摊上去买一些拼接类的小东西。</p>
+<p>但是我还是建议：冻死吧，蝉，Winter is Coming!</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">心事</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/25/Chan-can-night-howling/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-Today-How" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
         
-          <a class="article-more-a" href="/2017/06/15/python函数的默认参数/#more">more >></a>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/25/Today-How/">Today How?</a>
+    </h1>
+  
+
+        
+        <a href="/2017/07/25/Today-How/" class="archive-article-date">
+  	<time datetime="2017-07-25T14:40:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="事情发生在我的身边，自然得那么美。"><a href="#事情发生在我的身边，自然得那么美。" class="headerlink" title="事情发生在我的身边，自然得那么美。"></a>事情发生在我的身边，自然得那么美。</h3><p>深圳到成都的列车上，人们挤在一个车厢里面，交谈和休息。</p>
+<p>我刚坐下还气喘吁吁，一阿姨就来和我换铺位了。是的，她带了个小孩要换我的下铺。所以我换了。在乘务员走来的空隙，大家就聊来了。</p>
+<p>来了一个列车销售员，他给乘客试用他的产品，推随性，大家嘻嘻哈哈，价格砍得很开心。</p>
+<p>刚刚如果晚了10分钟我就赶不上这趟火车了。</p>
+<p>刚刚叔叔们在谈90s中国的铁路运输，讲到了 吃得掉小孩的拥挤列车，没法上厕所的拥挤车厢厕所。形象描述中，邓某人的一句话改变了南下工人的交通状况。</p>
+<p>只记得我小时候坐车也很辛苦，也是这路火车。买了票也得挤，板凳下睡人，行李架睡小孩。水泄不通，上厕所都要像泥鳅一样钻。那段时光，这条铁路的每年都是这样，每年都是。可是我的父亲每年也还要回家。</p>
+<blockquote>
+<p>火车上的故事要讲的话，太长了。</p>
+<p>长啊，多少？</p>
+<p>像铁轨一样长？</p>
+<p>你说的是记忆吗？</p>
+<p>免费，随意听听哦，记不住那么多，全靠遇见和运气，就像我前几天在深圳遇见了现在计科同班同学一样。</p>
+<hr>
+</blockquote>
+<p> <img src="http://a3.qpic.cn/psb?/V13TmHHh25m9XB/RlIAS.mXP58V51Yc4s4FETTXQHUjZWYgYHLznLe7bPM!/b/dGoBAAAAAAAA&amp;bo=AAWrBpgHIAoRCSM!&amp;rf=viewer_4" alt="LinkCity Underground"></p>
+<p>再看看姑爷呢？他上半年回四川，没有搭飞机，也没有开豪车，一路是铁路上缓缓的绿皮火车，和我现在一样。中国现在真是富强啦，人们聊怎么打印度，怎么修地铁，挖空城市，怎么远洋留学。姑姑最悲惨的’’ 第一次挤火车带着孩子’’也留在了记忆里。现在家家住在大房子了啊，出行还得坐电梯烧掉一些汽油，开车。</p>
+<p>推销员走了，悄悄告诉大家隐瞒价格的内幕。下铺叔叔说，“”明天我来再买一个，便宜的给我留着一个啊“”。是啊，便宜了乘客，自己也卖出了几个。真开心，看着也开心。</p>
+<h2 id=""><a href="#" class="headerlink" title="#"></a>#</h2><p>最后喘过气了，还是说说怎么会累得喘气吧。听说深圳的出租车司机出了名的快，漂移过弯，路口绿灯10S内加速，卡车鸣笛，技术都是经过实践检验了的。这次体会到了。爷爷前晚闹着要回四川家，我退掉了火车票（深圳西站），准备带他一起飞回四川，可当晚他又反悔了，还说“我不用管，你要回家就回去你的，我才不管呢！”当时我的心境啊，之前不是一直都叫我不要提前走和你一起回四川的吗？哇，老顽童主意变得真快。后来我用携程抢票，意料之中当晚抢了一张票（ 7.19深圳站 ）。所以就搞错啦！ 哥用大奔驰送我到西站，一路上开开玩笑，顺着风背着太阳还挺快的。好的，下车挥手再见，漫步站台，柜台取票，是的不用急。 过安检坏了：“这个票到市里面去坐！” 晴天霹雳！ 哎呀下起雨来了，这时候我懵了，过马路夺步<br>上了一辆出租，半个小时飙到了深圳站，提前10min到，一路飞奔插队检票。所以，深圳出租车司机的车技确实好！</p>
+<h3 id="看着人们为家庭的奔波，留守，旅途上的人，岁月的流金里，他们是这样想的吧：千金虽难得，不如归己家。"><a href="#看着人们为家庭的奔波，留守，旅途上的人，岁月的流金里，他们是这样想的吧：千金虽难得，不如归己家。" class="headerlink" title="看着人们为家庭的奔波，留守，旅途上的人，岁月的流金里，他们是这样想的吧：千金虽难得，不如归己家。"></a>看着人们为家庭的奔波，留守，旅途上的人，岁月的流金里，他们是这样想的吧：千金虽难得，不如归己家。</h3>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">手写的从前</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/07/25/Today-How/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
+    <article id="post-Bu-tifulsoup创建爬虫" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/16/Bu-tifulsoup创建爬虫/">Bu:tifulsoup创建爬虫</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/16/Bu-tifulsoup创建爬虫/" class="archive-article-date">
+  	<time datetime="2017-06-16T04:50:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##引言</p>
+<blockquote>
+<p>网络爬虫，蜜蜂，穿山甲，蜘蛛，大数据时代的协奏曲；<br>Python:人生苦短，快乐的语言，多进程，并发，庞大的模块，往高性能走。<br>通过域名获取Html；<br>解析Parsing数据<br>储存信息，<br>辗转重复爬取；</p>
+</blockquote>
+<h2 id="创建爬虫"><a href="#创建爬虫" class="headerlink" title="#创建爬虫"></a>#创建爬虫</h2><p>###导入模块：安装下载相关，掌握pip,npm，git,等的常用指令<br>    from urllib.request import urlopen<br>    from urllib.error import HTTPError,URLError #https Eror获取网页打开404错误，服务器无响应<br>    from bs4 import BeautifulSoup  </p>
+<hr>
+<p>###主要函数，创建Bs4对象，并捕捉异常保证正常运行</p>
+<pre><code>url = &quot;http://www.pythonscraping.com/pages/page1.html&quot;
+def get_sth(url):
+    try :
+        html = urlopen(url)
+    except (HTTPError,URLError) as e:
+        return None
+    try:
+        bsobj = BeautifulSoup(html.read())       #细化BS4（）函数获取到的对象的用法属性
+        title = bsobj.body.h1
+
+    except ArithmeticError  as e:
+        return None
+    return title
+title = get_sth(&quot;url&quot;)
+if(title == None):          #异常处理，函数分支让程序可更改，灵活复用
+    print(&quot; Error: nothing foud&quot;)
+else:
+    print(title)
+</code></pre><p>###解析难题:1.CSS格式</p>
+<p>‘’’ </p>
+<pre><code>html = urlopen(url)
+bsObje = BeautifulSoup(html)
+namelist = bsObje.find_all(&quot;&quot;,{&quot;TagNameclass(ID\div)&quot;:&quot;AboutTagsAttibute&quot;})
+for name in namelist:
+    print(name.get_text())
+</code></pre><h2 id="在此之前，请尽量保留获取到的namelist的结构，因为Getext-方法会把之前的连接，段落，标签都清除"><a href="#在此之前，请尽量保留获取到的namelist的结构，因为Getext-方法会把之前的连接，段落，标签都清除" class="headerlink" title="在此之前，请尽量保留获取到的namelist的结构，因为Getext()方法会把之前的连接，段落，标签都清除"></a>在此之前，请尽量保留获取到的namelist的结构，因为Getext()方法会把之前的连接，段落，标签都清除</h2><ul>
+<li><strong>findAll()</strong>:</li>
+<li>方法运用千奇百怪</li>
+</ul>
+<p>#解析重点就是对网页的熟悉程度啦<br>一般情况下，我们都只需要掌握标签的属性和名称即可；<br>但是findAll(tag,attributes,recursive,text,limit,keyword)函数，还这样定义了参数</p>
+<ol>
+<li><p>recursive：布尔，明确递归的查找，默认为true；影响抓取的速度，真正明确网页信息的情况下；</p>
+</li>
+<li><p>text: if(text in tag.gettext(),包含则保存在列表)<br>namelist= bsObjets.findAll(tetx = “text”)</p>
+</li>
+<li><p>limit:设置网页的项，find= findAll(limit =1)</p>
+</li>
+</ol>
+<p>###总结:一般 后者标签属性的设置都在前者 标签类别之上（父类）<br>‘’’</p>
+<ul>
+<li>前面已经有了两种对象，<br>  1.bsObj = Bs$(html),<br>  *2.tagobj = bsObj.findAll()</li>
+</ul>
+<h1 id="还存在两种：1-Comment-对象，查找注释标签2-NavigabbleString对象：用来表示标签里面的文字，不是标签；"><a href="#还存在两种：1-Comment-对象，查找注释标签2-NavigabbleString对象：用来表示标签里面的文字，不是标签；" class="headerlink" title="还存在两种：1.Comment 对象，查找注释标签2.NavigabbleString对象：用来表示标签里面的文字，不是标签；"></a>还存在两种：1.Comment 对象，查找注释标签2.NavigabbleString对象：用来表示标签里面的文字，不是标签；</h1><ul>
+<li><p>导航树的方法：<br>#不建议，因为i网站数据变化，用标签的方法比这种更加准确；导航书的方法，有父子，兄弟，等关系，和排序有关，所以容易失效；</p>
+<p>   bsObje.tag.subTag.anotherSubTag;</p>
+</li>
+</ul>
+<p>#正则表达式（Regex）：<br>‘’’</p>
+<p>###类似编译原理遇到的，用于处理字符串的匹配问题： </p>
+<p>###链接：参考正则表达式的处理文档，常用符号，不同的语言不同。</p>
+<p>‘’’</p>
+<blockquote>
+<p>接上面代码<br>    import re</p>
+</blockquote>
+<pre><code>imges = bsObje.findAll(&quot;img&quot;, {&quot;src&quot;: re.compile(&quot;\.\.\/img\/gifs\/img.*\.jpg&quot;)})
+
+#获取标签的全部属性：
+myTag.attrs (英文Attributions)
+
+这个方法很好，返回的是一个字典对象，所以用用myTags.attrs[&quot;src&quot;]既可以获取标签所有属性中的&quot;src&quot;路径属性；
+</code></pre><p>#<strong><a href="http://study.163.com/course/courseMain.htm?courseId=1003666043" target="_blank" rel="external">爬虫入门视频</a></strong></p>
+<p>#<strong><a href="http://study.163.com/course/courseMain.htm?courseId=378003" target="_blank" rel="external">Python入门视频</a></strong></p>
+        
+          <a class="article-more-a" href="/2017/06/16/Bu-tifulsoup创建爬虫/#more">more >></a>
         
       
 
@@ -267,156 +421,7 @@ print now
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/15/python函数的默认参数/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-artical" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/14/artical/">artical</a>
-    </h1>
-  
-
-        
-        <a href="/2017/06/14/artical/" class="archive-article-date">
-  	<time datetime="2017-06-14T03:14:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/14/artical/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-firstmd" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/14/firstmd/">阿斯达</a>
-    </h1>
-  
-
-        
-        <a href="/2017/06/14/firstmd/" class="archive-article-date">
-  	<time datetime="2017-06-14T03:14:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#这是我的第一个博文</p>
-<p>##添加图片</p>
-<p>###这是一张图片</p>
-<ul>
-<li>无序列表  </li>
-</ul>
-<p>#####图片</p>
-<blockquote>
-<p>图片为：  <code>![](){ImgCap}{/ImgCap}&#39;</code><br>上面用到 代码框     <code>`` </code></p>
-</blockquote>
-<pre><code>dasasdasd    
-s    开头的四个空格或者一个TAB 也可以作代码
-
-
-
-
-
-public class Blog
-{
- public int Id { get; set; }
- public string Subject { get; set; }
-}
-</code></pre><p>链接为：<code>[]()</code></p>
-<ul>
-<li><p><img src="http://a3.qpic.cn/psb?/V13TmHHh1Vnf0f/ot.TuNEAD1X9F7g4DpcbX6FF3K2Aqrib4svaC.Hak60!/b/dMgAAAAAAAAA&amp;bo=OASdBQAAAAAFB4A!&amp;rf=viewer_4" alt="动态图"></p>
-<ol>
-<li>有序列表 （也可在菜单栏点击生成）</li>
-<li></li>
-</ol>
-</li>
-</ul>
-<p><strong>这是粗体</strong></p>
-<blockquote>
-<p>引用用 <code>&gt;</code></p>
-<p>这hi是引用<br>慎独</p>
-</blockquote>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><hr>
-<p>`用三个 “*”             </p>
-<blockquote>
-<p><code>***</code></p>
-<p>#请注意</p>
-<p>##二级标题的分割效果 ( Have a try by yourself)<br>
-        
-          <a class="article-more-a" href="/2017/06/14/firstmd/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Canot see Drafts</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/14/firstmd/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/06/16/Bu-tifulsoup创建爬虫/">展开全文 >></a>
         </p>
       
 
@@ -433,7 +438,7 @@ public class Blog
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 
@@ -527,7 +532,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">漫画娱乐</a>
+                <a href="javascript:void(0)" class="js-tag color3">心事</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -535,11 +540,19 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">手写的从前</a>
+                <a href="javascript:void(0)" class="js-tag color5">漫画娱乐</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Canot see Drafts</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">手写的从前</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">以后就是作家了</a>
               </li>
             
             <div class="clearfix"></div>
